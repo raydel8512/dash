@@ -1,0 +1,43 @@
+body {
+  overflow: hidden;
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  color: #111854;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.bg-primary {
+  background-color: #111854 !important;
+}
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+#sidebar-container {
+  min-height: 100vh;
+}
+
+#sidebar-container .logo {
+  padding: 0.875rem 1.25rem;
+}
+
+#sidebar-container .menu {
+  width: 18rem;
+}
+
+.btn-search {
+  right: 5px;
+}
+
+.avatar {
+  max-width: 35px;
+}
+
+#content {
+  overflow-y: auto;
+  height: 100vh;
+  padding-botton: 5rem;
+}
