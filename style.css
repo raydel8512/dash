@@ -1,8 +1,14 @@
+:root {
+  --primary: #111854;
+  --light: #ffffff;
+  --gray: #efefef;
+}
+
 body {
   overflow: hidden;
   font-family: "Muli", sans-serif;
   font-weight: 300;
-  color: #111854;
+  color: var(--primary);
 }
 
 a:hover {
@@ -10,10 +16,29 @@ a:hover {
 }
 
 .bg-primary {
-  background-color: #111854 !important;
+  background-color: var(--primary) !important;
 }
 .bg-light {
-  background-color: #ffffff !important;
+  background-color: var(--light) !important;
+}
+.bg-mix {
+  background: linear-gradient(180deg, var(--light) 50%, var(--gray) 0);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.btn {
+  border: 0;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary);
 }
 
 #sidebar-container {
@@ -22,6 +47,7 @@ a:hover {
 
 #sidebar-container .logo {
   padding: 0.875rem 1.25rem;
+  color: #dfd8d8;
 }
 
 #sidebar-container .menu {
@@ -39,5 +65,15 @@ a:hover {
 #content {
   overflow-y: auto;
   height: 100vh;
-  padding-botton: 5rem;
+  padding-bottom: 5rem;
+}
+
+.stat {
+  border-right: 1px solid #dfd8d8;
+}
+
+@media (max-width: 768px) {
+  #sidebar-container {
+    display: none;
+  }
 }
